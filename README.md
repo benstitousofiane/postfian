@@ -1,5 +1,6 @@
 # postfian
 Website of Postfian CMS
+For the moment it's adapted for mobile device, for big screen soon 😉
 
 
 ![image](https://github.com/benstitousofiane/postfian/assets/129552238/1f4a80c9-f9a9-408c-8c3c-9a73dbcb8fa1)
