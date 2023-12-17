@@ -1,2 +1,2 @@
 # postfian
-simple free CMS
+Website of Postfian CMS
