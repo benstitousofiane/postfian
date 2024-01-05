@@ -1,6 +1,8 @@
 # postfian
 simple free CMS
 
+En cours : Développement de l'éditeur d'article
+
 Preview :
 
 ![image](https://github.com/benstitousofiane/postfian/assets/129552238/6a87c5ac-4bdd-44eb-b880-df25d9970361)
