@@ -1,0 +1,174 @@
+/* 
+
+main panel shape : rectangle with border radius
+
+button shapes 1 : circle
+
+button shape 2 : rounded rectangle
+
+input : merged with foreground
+
+*/
+
+:root{
+    --button-width: 80px;
+    --button-height: 80px;
+
+    --default-margin-button: 10px;
+
+    --main-direction: row;
+    --space: space-around
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: var(--main-direction);
+
+    flex-grow: 1;
+    border-radius: 0px 0px 30px 30px;
+
+    justify-content: var(--space);
+
+    text-align: center;
+}
+
+main section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header h1{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+main section .foreforeground{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.center{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+footer button{
+    margin: var(--default-margin-button);
+}
+
+
+button svg{
+    width: calc(var(--button-width) - 45px);
+    height: calc(var(--button-heights) - 45px);
+}
+
+
+.button-1{
+    border: none;
+    width: calc(var(--button-width) + 10px);
+    height: calc(var(--button-height) + 10px);
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.button-1 h1{
+    font-size: calc(var(--button-width) - 25px);
+}
+
+.button-2{
+    border: none;
+    border-radius: 100%;
+    width: calc(var(--button-width) - 10px);
+    height: calc(var(--button-height) - 10px);
+    cursor: pointer;
+}
+
+input[type=text]{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    margin: 20px 20px 50px 20px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+select{
+    border: none;
+}
+
+
+.rectangle{
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#preview{
+    width: 100%;
+    margin: 20px;
+    text-align: left;
+}
+
+@media (max-width: 1000px){
+    :root{
+        --button-width: 80px;
+        --button-height: 80px;
+    
+        --default-margin-button: 10px;
+    
+        --main-direction: column;
+        --space: space-between;
+    }
+}
