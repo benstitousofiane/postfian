@@ -1,0 +1,109 @@
+/*
+input color: white
+
+text color : grey / dark color
+
+button color 1 : very colorful
+-> button color 1 background : 
+-> button color 1 forground
+
+button color 2 : darker than button color 1
+-> button color 2 background
+-> button color 2 forground
+
+foreground  color : very dark color, but still see the initial color
+
+background color : lighter than foreground color
+
+input color : same than background color
+-> input color backgorund
+-> input color foreground
+
+Todo : an automatic palet maker by manipulate hexa, can be use after in js script.
+*/
+
+:root{
+    --input-color : white;
+    
+    --text-color: #bcaaaa;
+
+    --button-color-1-background: #db7dd2;
+    --button-color-1-foreground: #1d0d1b;
+
+    --button-color-2-background: #522451;
+    --button-color-2-foreground: #fec9ff;
+
+    --background-color: #230f23;
+    --foreground-color: #160914;
+
+    --foreforeground-background: #0e060d;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header{
+    background-color: var(--foreground-color);
+    padding-top: 15px;
+}
+
+header h1{
+    background-color: var(--foreforeground-background);
+    color: var(--text-color);
+}
+
+main{
+    background-color: var(--foreground-color);
+}
+
+main section .foreforeground{
+    background-color: var(--foreforeground-background);
+    color: var(--text-color);
+}
+
+.button-1{
+    background-color: var(--button-color-1-background);
+    color: var(--button-color-1-foreground);
+}
+
+.button-1 svg{
+    fill: var(--button-color-1-background);
+    stroke: var(--button-color-2-foreground);
+    background-color: var(--button-color-1-background);
+}
+
+.button-2{
+    color: var(--button-color-2-foreground);
+    background-color: var(--button-color-2-background);
+}
+
+.button-2 svg{
+    fill: var(--button-color-2-background);
+    stroke: var(--button-color-2-foreground);
+    background-color: var(--button-color-2-background);
+}
+
+a{
+    color: var(--button-color-1-background);
+}
+
+input[type=text]{
+    background-color: var(--foreforeground-background);
+    color: var(--text-color);
+}
+
+textarea{
+    background-color: var(--foreforeground-background);
+    color: var(--text-color);
+}
+
+select{
+    background-color: var(--foreforeground-background);
+    color: var(--text-color);
+}
+
+
+
+
